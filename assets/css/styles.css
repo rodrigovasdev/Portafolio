@@ -115,10 +115,15 @@ border-radius: 21px 21px 21px 21px;
     top: 10%;
     width: 100%;
     height: 80%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
     justify-content: center;
     align-items: center;
     z-index: 1000; /* Asegura que el popup esté encima del contenido */
+}
+@media(max-width:767px){
+    .popup-mobile{
+        left: 0%;
+    }
 }
 
 #experiencia-card-e{
@@ -140,11 +145,3 @@ border-radius: 21px 21px 21px 21px;
     position: relative;
 }
 
-/* Estilo del botón de cierre */
-.close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 30px;
-    cursor: pointer;
-}

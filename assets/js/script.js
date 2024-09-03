@@ -52,7 +52,7 @@ $(document).ready(function (){
     $(".col-lg-4").click(function(){  
         $(".popup").hide(); 
         var id = $(this).attr("id");
-        $("#" + id + "-e").fadeIn(800);
+        $("#" + id + "-e").fadeIn(600);
         popupJustOpened = true;
     })
 
@@ -61,13 +61,13 @@ $(document).ready(function (){
         var content = $(this).text();
         content = content.toLowerCase()
         if (content == 'sobre mí'){
-            $("#sobremi-card-e").fadeIn(800);
+            $("#sobremi-card-e").fadeIn(600);
         }
         if (content == 'educación'){
-            $("#educacion-card-e").fadeIn(800);
+            $("#educacion-card-e").fadeIn(600);
         }
 
-        $("#" + content + "-card-e").fadeIn(800);
+        $("#" + content + "-card-e").fadeIn(600);
         popupJustOpened = true;
     })
 
