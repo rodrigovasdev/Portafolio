@@ -48,6 +48,12 @@ $(document).ready(function (){
         $("#proyectos-card .card").removeClass("border-3 border-light");
     });
 
+    $(".container-card").mouseenter(function() {
+        $(this).css('cursor', 'pointer');
+      }).mouseleave(function() {
+        $(this).css('cursor', 'default');
+      });
+
     let popupJustOpened = false; 
     $(".col-lg-4").click(function(){  
         $(".popup").hide(); 
@@ -70,6 +76,12 @@ $(document).ready(function (){
         $("#" + content + "-card-e").fadeIn(600);
         popupJustOpened = true;
     })
+
+    $(".navbar-nav a").mouseenter(function() {
+        $(this).css('cursor', 'pointer');
+      }).mouseleave(function() {
+        $(this).css('cursor', 'default');
+      });
 
     $(window).click(function() {  
         if (!popupJustOpened && $(".popup").is(":visible")) {

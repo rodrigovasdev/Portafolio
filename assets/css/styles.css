@@ -94,31 +94,28 @@
     position: fixed;
     left: 35%;
     top: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
     width: 100%;
     height: 80%;
+    border-radius: 21px 21px 21px 21px;
+    -moz-border-radius: 21px 21px 21px 21px;
+    -webkit-border-radius: 21px 21px 21px 21px;
     background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
     justify-content: center;
     align-items: center;
     z-index: 1000; /* Asegura que el popup esté encima del contenido */
-}
-@media(max-width:767px){
-    .popup-mobile{
-        left: 0%;
-    }
-    .main-container-mobile{
-        height: 245vh;
-    }
-} 
-@media(min-width:768px) and (max-width:991px){
-    .main-container-mid{
-        height: 120vh;
-    }
 }
 
 
 #experiencia-card-e{
     height: 97%;
     top: 2%;
+}
+
+#habilidades-card-e{
+    height: 85%;
+    top: 8%;
 }
 
 
@@ -133,5 +130,32 @@
     margin-top: 18%;
     text-align: center;
     position: relative;
+}
+
+@media(max-width:767px){
+    .popup{
+        left: 0%;
+    }
+    .main-container{
+        height: 240vh;
+    }
+
+    .popup-content{
+        margin-top: 9%;
+    }
+
+    
+} 
+@media(min-width:768px) and (max-width:991px){
+
+    .popup{
+        left: 24%;
+    }
+    .main-container{
+        height: 120vh;
+    }
+    .popup-content{
+        margin-top: 9%;
+    }
 }
 
