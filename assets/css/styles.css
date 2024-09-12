@@ -137,13 +137,19 @@
         left: 0%;
     }
     .main-container{
-        height: 210vh;
+        height: 100%;
     }
 
     .popup-content{
-        margin-top: 18%;
+        margin-top: 6%;
     }
 
+    #experiencia-card-e{
+        height: 100%;
+        top: 1%;
+        
+    }
+    
     
 } 
 @media(min-width:768px) and (max-width:991px){
